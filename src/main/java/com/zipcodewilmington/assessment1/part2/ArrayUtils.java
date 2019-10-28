@@ -1,5 +1,9 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -29,29 +33,20 @@ public class ArrayUtils {
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
 
-        /*int c=0;
-        for(int i=0;i<objectArray.length;i++){
-            if(objectArray[i]==objectToRemove){
-                c=c+1;
-            }
-        }
-        int l=objectArray.length-c;
-        int i=0;
-        Object[]remove=new Object[l];
+         int n = getNumberOfOccurrences( objectArray,objectToRemove);
+         int l=objectArray.length-n;
 
-        for(int j=0;j<objectArray.length;j++){
-            if(objectArray[i]!=objectToRemove){
-                remove[i]=objectArray[j];
-            }
-
-        }*/
-
-        
+        ArrayList<String> easyArr= new ArrayList<Object>(Arrays.asList(objectArray));
 
 
 
 
-        return remove;
+
+
+
+
+        return null;
+
     }
 
     /**
