@@ -32,20 +32,28 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
+        int n = getNumberOfOccurrences(objectArray,objectToRemove);
+        Object[]arr=new Object[objectArray.length-n];
+for(int i=0;i<objectArray.length;i++){
+    if(!objectArray[i].equals(objectToRemove)){
+        
+    }
 
-         int n = getNumberOfOccurrences( objectArray,objectToRemove);
-         int l=objectArray.length-n;
-
-        ArrayList<String> easyArr= new ArrayList<Object>(Arrays.asList(objectArray));
-
-
-
-
-
+}
 
 
 
-        return null;
+
+        return  null;
+
+
+
+
+
+
+
+
+
 
     }
 
