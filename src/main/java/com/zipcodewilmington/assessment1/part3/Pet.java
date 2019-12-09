@@ -6,13 +6,14 @@ package com.zipcodewilmington.assessment1.part3;
 public abstract class Pet implements Animal {
     private String name;
     private int age;
+    PetOwner owner;
     /**
      * nullary constructor
      * by default, pet has age of 0; name of "";
      */
     public Pet() {
         this.name="";
-        this.age=Integer.MAX_VALUE;
+        this.age=0;
     }
 
     /**
@@ -58,14 +59,13 @@ this.age=age;
      * ensure this instance of `Pet` is added to the owner's composite `pets` list
      */
     public void setOwner(PetOwner newPetOwner) {
-        Pet p = new Dog();
-        PetOwner petOwner=new PetOwner(null, p);
+        this.owner=newPetOwner;
     }
 
     /**
      * @return PetOwner object whose composite `pets` collection contains this Pet instance
      */
     public PetOwner getOwner() {
-        return getOwner();
+return null;
     }
 }

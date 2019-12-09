@@ -6,9 +6,9 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int k, int j) {
-int counter=0;
+int counter=(int)((k/j)+(k%j));
 
 
-        return -1;
+        return counter ;
     }
 }

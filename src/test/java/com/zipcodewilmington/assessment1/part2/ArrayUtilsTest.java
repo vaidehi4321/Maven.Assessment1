@@ -49,6 +49,18 @@ public class ArrayUtilsTest {
         // Then
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void getMostCommonTest2() {
+        // Given
+        Integer expected = 1;
+        Integer[] inputArray = {1, 3, 9, 8, 1, 5, 3, 0, 10, 1, 7};
+
+        // When
+        Integer actual = (Integer) ArrayUtils.getMostCommon(inputArray);
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 
     @Test
     public void getLeastCommonTest() {

@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment1.part3;
 
+import com.apple.eawt.event.MagnificationEvent;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -18,14 +20,14 @@ super(name,age);
      * @param age age of this dog
      */
     public Dog(Integer age) {
-        this.age=age;
+        super("Dog name",age);
     }
 
     /**
      * @param name name of this dog
      */
     public Dog(String name) {
-this.name=name;
+super (name);
     }
 
     /**
@@ -35,8 +37,7 @@ this.name=name;
      * age is 0
      */
     public Dog() {
-       this.name="";
-       this.age=0;
+      super("Dog name",0);
     }
 
     /**

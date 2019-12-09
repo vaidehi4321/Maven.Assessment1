@@ -21,14 +21,14 @@ super(name,age);
      */
     public Cat(Integer age) {
 
-       this.age=age;
+       super("Cat name",age);
     }
 
     /**
      * @param name name of this Cat
      */
     public Cat(String name) {
-       this.name=name;
+       super(name);
 
     }
 
@@ -39,9 +39,7 @@ super(name,age);
      * age is 0
      */
     public Cat() {
-this.name="";
-this.age=0;
-
+super("Cat name",0);
     }
 
     /**
